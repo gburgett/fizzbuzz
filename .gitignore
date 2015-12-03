@@ -1,0 +1,7 @@
+*swo
+*swp
+*~
+CMakeCache.txt
+CMakeFiles
+bii/
+bin/
