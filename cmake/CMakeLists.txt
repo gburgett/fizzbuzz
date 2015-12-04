@@ -37,6 +37,7 @@ ADD_DEFINITIONS(-DBIICODE)
 SET(BIICODE_ENV_DIR "C:/Users/Gordon/.biicode")
 
 #artifact to allow upstream configurations
+BII_PREBUILD_STEP(deps/google/gtest)
 BII_PREBUILD_STEP(blocks/gordonb/fizzbuzz)
 
 # Enable tests with CTest
@@ -46,4 +47,5 @@ enable_testing()
 add_custom_target(biitest)
 
 # Inclusion of the blocks affected by the build
+BII_INCLUDE_BLOCK(deps/google/gtest)
 BII_INCLUDE_BLOCK(blocks/gordonb/fizzbuzz)
