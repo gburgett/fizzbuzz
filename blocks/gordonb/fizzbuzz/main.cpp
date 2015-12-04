@@ -14,6 +14,7 @@ using namespace std;
 
 bool tryParseInt(char* str, int& result);
 
+
 int main (int argc,      // Number of strings in array argv
           char *argv[],   // Array of command-line argument strings
           char *envp[]) 
@@ -23,20 +24,30 @@ int main (int argc,      // Number of strings in array argv
     cout << argv[j] << "\n";
   }*/
 
+  char* templ = "Usage: %s [number of lines]\n"
+   "  Prints fizzbuzz up to the given number of lines.\n";
+  int len = strlen(templ) + strlen(argv[0]);
+
+  char usage [len];
+  int cx;
+  cx = snprintf(usage, len, templ, argv[0]);
+
 
  	if (argc < 2) {
- 		cout << "Please specify the number of lines to print.\n";
+ 		cout << usage;
  		return -1;
  	}
 
  	if (argc > 2) {
- 		cout << "Please specify only one argument.\n";
+ 		cout << "Please specify only one argument.\n" << usage;
  		return -1;
  	}
 
  	int numFizzBuzz = 0;
   if (!tryParseInt(argv[1], numFizzBuzz)) {
-    cout << "input was not a number: '" << argv[1] << "'\n";
+    
+      cout << "input was not a number: '" << argv[1] << "'\n" << usage;
+    
     return -1;
   }
 
