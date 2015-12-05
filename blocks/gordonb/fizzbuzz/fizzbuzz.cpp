@@ -20,7 +20,17 @@ std::string to_string(int n) {
 
 std::string Fizz_Buzz(int line) {
 
-	//TODO: implement fizzbuzz
+	if (line % 3 == 0 && line % 5 == 0) {
+		return "fizzbuzz";
+	}
+	
+	if (line % 5 == 0) {
+		return "buzz";
+	}
+	
+	if (line % 3 == 0) {
+		return "fizz";
+	}
 
 	return to_string(line);
 }
