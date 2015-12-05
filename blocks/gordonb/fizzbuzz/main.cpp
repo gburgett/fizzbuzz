@@ -7,6 +7,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <climits>
+#include <cerrno>
 #include <cstring>
 #include "fizzbuzz.h"
 

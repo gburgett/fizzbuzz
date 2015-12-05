@@ -8,6 +8,8 @@ I made this project using biicode to learn a bit of how C++ dependency managemen
 * Install Biicode https://www.biicode.com/
 * In this folder, run `bii init`
 
+Instructions for installing on Koding.com: https://learn.koding.com/guides/getting-started-biicode/
+
 ### Building the executable
 
 `bii build`
