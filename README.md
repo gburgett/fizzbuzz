@@ -1,4 +1,5 @@
 ## Fizzbuzz test project
+[![Build Status](https://travis-ci.org/gburgett/fizzbuzz.svg?branch=master)](https://travis-ci.org/gburgett/fizzbuzz)
 
 I made this project using biicode to learn a bit of how C++ dependency management is done.  I'm sure it's a lot harder than this normally, but biicode made it easy.
 
