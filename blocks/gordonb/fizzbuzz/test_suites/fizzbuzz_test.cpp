@@ -10,9 +10,9 @@
 // Tests that the number 1 prints out the string representation of 1
 TEST(Fizz_Buzz, In_1_Out_1) {
 
-	std::string out = Fizz_Buzz(3);
+	std::string out = Fizz_Buzz(1);
 
-    EXPECT_STREQ("3", out.c_str());
+    EXPECT_STREQ("1", out.c_str());
 }
 
 // Tests Fizz_Buzz()
